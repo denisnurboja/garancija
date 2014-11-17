@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: MyString
+  store: MyString
+  purchased_at: 2014-11-17
+  product_id: 
+  user_id: 
+
+two:
+  serial: MyString
+  store: MyString
+  purchased_at: 2014-11-17
+  product_id: 
+  user_id: 

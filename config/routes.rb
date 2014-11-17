@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :registrations
+
+  resources :users
+
   resources :products
 
   # The priority is based upon order of creation: first created -> highest priority.

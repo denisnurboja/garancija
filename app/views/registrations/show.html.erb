@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @registration.serial %>
+</p>
+
+<p>
+  <strong>Store:</strong>
+  <%= @registration.store %>
+</p>
+
+<p>
+  <strong>Purchased at:</strong>
+  <%= @registration.purchased_at %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @registration.product%>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @registration.user %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>
