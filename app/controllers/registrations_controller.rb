@@ -14,7 +14,12 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/new
   def new
-    @registration = User.find(params[:user_id]).registrations.new
+    if params[:user_id]
+      @registration = User.find(params[:user_id]).registrations.new
+    else
+      @registration = Registration.new
+    end
+
 
   end
 
