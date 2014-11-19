@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/index'
+
   get 'user_registrations/index'
 
   get 'reglists/index'
@@ -14,6 +16,7 @@ Rails.application.routes.draw do
   resources :products do
     resources :product_registrations
   end
+  resources :search
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
