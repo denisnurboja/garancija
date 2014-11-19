@@ -14,7 +14,8 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/new
   def new
-    @registration = Registration.new
+    @registration = User.find(params[:user_id]).registrations.new
+
   end
 
   # GET /registrations/1/edit
@@ -26,6 +27,7 @@ class RegistrationsController < ApplicationController
   # POST /registrations.json
   def create
     @registration = Registration.new(registration_params)
+
 
     respond_to do |format|
       if @registration.save

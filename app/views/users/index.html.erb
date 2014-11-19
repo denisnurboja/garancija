@@ -26,6 +26,7 @@
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Registrations', user_reglists_path(user) %> </td>
+        <td><%= link_to 'New Registration', new_user_registration_path(user) %> </td>
       </tr>
     <% end %>
   </tbody>
