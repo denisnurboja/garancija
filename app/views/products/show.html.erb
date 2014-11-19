@@ -19,5 +19,6 @@
 	</tr>
 </tbody></table>
 
-<%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-success btn-xs' %> 
-<%= link_to 'Back', products_path, class: 'btn btn-success btn-xs' %>
+<%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-success' %> 
+<%= link_to 'Back', products_path, class: 'btn btn-success' %>
+<%= link_to 'Product registrations', product_product_registrations_path(@product), class: 'btn btn-success' %>

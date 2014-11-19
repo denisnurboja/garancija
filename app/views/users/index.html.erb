@@ -1,10 +1,9 @@
-<h1>Listing users</h1>
+<h1>Korisnici</h1>
 
 <table class="table">
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
       <th>Adress</th>
@@ -17,8 +16,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
+        <td><%= link_to "#{user.first_name} #{user.last_name}", user_path(user)  %></td>
         <td><%= user.email %></td>
         <td><%= user.phone %></td>
         <td><%= user.adress %></td>
@@ -27,6 +25,7 @@
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Registrations', user_reglists_path(user) %> </td>
       </tr>
     <% end %>
   </tbody>

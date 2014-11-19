@@ -1,0 +1,14 @@
+<h1>Reglists for user <%= "#{@user.first_name} #{@user.last_name}"%></h1>
+<p>Find me in app/views/reglists/index.html.erb</p>
+<table class="table">
+  
+  <% @reglists.each do |reglist| %>
+  <tr>
+    <td><%= link_to "#{reglist.product.model}", product_path(reglist.product) %> </td> 
+    <td><%= reglist.serial %> </td> 
+    <td><%= link_to 'Show', registration_path(reglist) %></td>
+  </tr>
+  <% end %>
+</table>
+  <%= link_to 'Back', users_path, class: 'btn btn-success' %>
+  

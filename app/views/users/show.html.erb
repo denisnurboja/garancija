@@ -1,39 +1,40 @@
 <p id="notice"><%= notice %></p>
+<table class="table">
+<tr>
+  <td><strong>First name:</strong></td>
+  <td><%= @user.first_name %></td>
+</tr>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<tr>
+  <td><strong>Last name:</strong></td>
+  <td><%= @user.last_name %></td>
+</tr>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+<tr>
+  <td><strong>Email:</strong></td>
+  <td><%= @user.email %></td>
+</tr>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<tr>
+  <td><strong>Phone:</strong></td>
+  <td><%= @user.phone %></td>
+</tr>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
+<tr>
+  <td><strong>Adress:</strong></td>
+  <td><%= @user.adress %></td>
+</tr>
 
-<p>
-  <strong>Adress:</strong>
-  <%= @user.adress %>
-</p>
+<tr>
+  <td><strong>Pobox:</strong></td>
+  <td><%= @user.pobox %></td>
+</tr>
 
-<p>
-  <strong>Pobox:</strong>
-  <%= @user.pobox %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @user.city %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<tr>
+  <td><strong>City:</strong></td>
+  <td><%= @user.city %></td>
+</tr>
+</table>
+<%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-success' %> 
+<%= link_to 'Back', users_path, class: 'btn btn-success' %>
+<%= link_to 'User registrations', user_reglists_path(@user), class: 'btn btn-success' %>

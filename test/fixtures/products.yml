@@ -8,6 +8,6 @@ one:
 
 two:
   name: MyString
-  model: MyString
+  model: MyString2
   image: MyString
   description: MyText

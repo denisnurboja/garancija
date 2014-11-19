@@ -1,4 +1,4 @@
-<h1>Listing products</h1>
+<h1>Proizvodi</h1>
 
 <table class="table">
   <thead>
@@ -21,6 +21,7 @@
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+        <td><%= link_to 'Registrations', product_product_registrations_path(product) %></td>
       </tr>
     <% end %>
   </tbody>

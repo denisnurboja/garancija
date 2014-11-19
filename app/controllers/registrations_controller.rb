@@ -1,6 +1,6 @@
 class RegistrationsController < ApplicationController
   before_action :set_registration, only: [:show, :edit, :update, :destroy]
-
+  before_action :find_products_and_users
   # GET /registrations
   # GET /registrations.json
   def index
@@ -15,12 +15,11 @@ class RegistrationsController < ApplicationController
   # GET /registrations/new
   def new
     @registration = Registration.new
-    @products = Product.all
-    @users = User.all
   end
 
   # GET /registrations/1/edit
   def edit
+ 
   end
 
   # POST /registrations
@@ -68,6 +67,11 @@ class RegistrationsController < ApplicationController
     def set_registration
       @registration = Registration.find(params[:id])
     end
+  
+  def find_products_and_users
+    @products = Product.all
+    @users = User.all
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def registration_params

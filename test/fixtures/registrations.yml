@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  serial: MyString
+  serial: 'SO1-1234565'
   store: MyString
   purchased_at: 2014-11-17
-  product_id: 
-  user_id: 
+  product_id: 1
+  user_id: 1
 
 two:
-  serial: MyString
+  serial: 'SO1-1234563'
   store: MyString
   purchased_at: 2014-11-17
-  product_id: 
-  user_id: 
+  product_id: 1
+  user_id: 1
