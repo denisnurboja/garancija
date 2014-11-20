@@ -1,0 +1,5 @@
+<%= link_to 'New User', new_user_path, class: 'btn btn-success' %>
+<%= form_tag(users_path, :method => "get", id: "form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Pretrazi korisnike" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
