@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     if params[:product_id]
       @product = Product.find(params[:product_id])
     else
-    @products = Product.all
+      @products = Product.all
     end
   end
 
