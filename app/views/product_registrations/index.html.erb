@@ -2,7 +2,7 @@
 
 <table class="table">
   
-  <% @prodregs.each do |prodreg| %>
+  <% @product.registrations.each do |prodreg| %>
   <tr>
     <td><%= link_to "#{prodreg.user.first_name}", user_path(prodreg.user) %> </td> 
     <td><%= prodreg.serial %> </td> 

@@ -14,7 +14,7 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.name %></td>
+        <td><%= link_to product.name, product_product_registrations_path(product) %></td>
         <td><%= product.model %></td>
         <td><%= product.image %></td>
         <td><%= product.description %></td>

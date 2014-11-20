@@ -4,7 +4,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    if params[:product_id]
+      @product = Product.find(params[:product_id])
+    else
     @products = Product.all
+    end
   end
 
   # GET /products/1

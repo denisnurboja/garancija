@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    if params[:search]
+    if params[:search] #pronadji usere koji ispunjavaju uslov
         @users = User.search(params[:search]).order("created_at DESC")
       else
         @users = User.all
